@@ -1,0 +1,388 @@
+/* Importación de fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Reset de estilos y configuración global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilos para el cuerpo de la página */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+/* Estilos para imágenes */
+img{
+    max-width: 100%;
+}
+
+/* Estilos para el contenedor principal */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para el menú de navegación */
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* Estilos para el logotipo */
+.logo{
+    color: rgb(36,113,163);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+/* Estilos para la barra de navegación */
+.menu .navbar ul{
+    display: flex;
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+.menu .navbar ul li a {
+    font-size: 19px;
+    padding: 0 20px;
+    color: rgb(0,139,139);
+    display: flex;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Cambio de color al pasar el ratón sobre los enlaces de navegación */
+.menu .navbar ul li a:hover{
+    color:rgb(36,113,163);
+}
+
+/* Estilos para el icono de hamburguesa y el menú desplegable en dispositivos móviles */
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para el contenido del encabezado */
+.header-content {
+    display: flex;
+    padding: 80px 0 0 0; 
+}
+
+/* Estilos para el texto del encabezado */
+.header-txt {
+    flex-basis: 50%;
+    padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para la imagen del encabezado */
+.header-img {
+    flex-basis: 50%;
+}
+
+.header-txt span{
+    font-size: 27px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 600px;
+    margin-bottom: 15px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-txt h1{
+    font-size:36px;
+    line-height: 1;
+    color:rgb(0,139,139);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+.header-content .btn-1{
+    margin-left: 30px;
+}
+
+
+
+/* Estilos para los párrafos */
+p{
+    font-size: 17px;
+    color: black;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para el botón de contacto */
+.btn-1{
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: rgb(36,113,163);
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(33,40, 105, 0.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para encabezados de nivel 2 */
+h2{
+    font-size: 35px;
+    line-height: 1;
+    color: rgb(0,139,139);
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para la sección "Acerca de" */
+.about {
+    padding: 80px 0;
+    background-color: white;
+}
+
+/* Estilos para el contenido de la sección "Acerca de" */
+.about-content {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+/* Estilos para el texto de la sección "Acerca de" */
+.about-txt {
+    flex-basis: 50%;
+    padding-right: 80px;
+}
+
+.about-txt p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para las imágenes de la sección "Acerca de" */
+.about-img {
+    flex-basis: 50%;
+    height: 60%;
+    max-width: 50%;
+}
+
+/* Estilos para la sección "Servicios" */
+#servicios {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.image-container h4{
+    color: rgb(0,139,139);
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    align-items: center;
+    margin-left: 43%;
+}
+
+.contact h2{
+    margin-left: 42%;
+    margin-bottom: 3%;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: rgb(36, 113, 163);
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(33, 40, 105, 0.2);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 40%;
+}
+
+
+/* Estilos para el pie de página */
+.footer{
+    background-color: black;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+/* Estilos para el contenido del pie de página */
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para secciones dentro del pie de página */
+.link h3{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para enlaces dentro del pie de página */
+.link a{
+    color: white;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Cambio de color al pasar el ratón sobre los enlaces del pie de página */
+.link a:hover{
+    color: rgb(0,139,139);
+}
+
+/* Estilos responsivos con Media Queries */
+@media(max-width:991px){
+    /* Estilos para el menú de navegación en dispositivos móviles */
+    .menu {
+        padding: 20px;
+        position: relative;
+    }
+
+    /* Mostrar el icono de hamburguesa en dispositivos móviles */
+    .menu label {
+        cursor: pointer;
+        display: initial;
+    }
+
+    /* Estilos para el menú desplegable en dispositivos móviles */
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(245, 245, 245, 0.8);
+        display: none;
+    }
+
+    /* Ajustes de diseño para enlaces de navegación en dispositivos móviles */
+    .menu .navbar ul {
+        flex-direction: column;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        padding: 20px 0;
+        align-items: center;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: white;
+    }
+
+    /* Mostrar el menú desplegable al hacer clic en el icono de hamburguesa */
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    /* Ajustes de diseño para el contenido del encabezado en dispositivos móviles */
+    .header-content{
+        padding: 20px 30px;
+        flex-direction: column;
+        text-align: center;
+        font-size: 14px; 
+    }
+
+    .header-txt{
+        padding: 0;
+        margin-bottom: 15px;
+        font-size: 14px; 
+    }
+    .header-txt span{
+        font-size: 21px;
+    }
+
+    .header-txt h1{
+        font-size: 21px;
+    }
+
+    .header-content .btn-1{
+        margin-right: 95px;
+    }
+
+    .header-content .btn-1{
+        margin-left: 25%;
+    }
+
+    /* Ajustes de diseño para párrafos en dispositivos móviles */
+    p{
+        margin-bottom: 30px;
+        font-size: 11px;
+    }
+
+    /* Ajustes de diseño para el botón de contacto en dispositivos móviles */
+    .btn-1{
+        display: inline-block;
+        padding: 14px 25px;
+        background-color: rgb(36,113,163);
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-size: 10px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(33,40, 105, 0.2);
+    }
+
+    /* Ajustes de diseño para la sección "Acerca de" en dispositivos móviles */
+    .about{
+        padding: 30px;
+    }
+
+    .about-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-txt {
+        padding: 0 0 30px 0;
+    }
+
+    .about-txt h2 {
+        font-size: 21px;
+    }
+    .about-txt p{
+        font-size: 14px;
+    }
+
+    /* Ajustes de diseño para la sección "Servicios" en dispositivos móviles */
+    #servicios {
+        padding: 0px;
+    }
+
+    .contact h2{
+        margin-left: 100px;
+    }
+    .btn-1{
+        margin-right: -50%;
+        margin-left: 125px;
+    }
+
+    input {
+    width: 100%;
+    margin-bottom: 20px;
+    }
+
+/* Estilos específicos para el pie de página en dispositivos móviles */
+    .footer-content {
+    flex-direction: column;
+    text-align: center;
+    }
+}

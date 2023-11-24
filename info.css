@@ -1,0 +1,493 @@
+/* Importa la fuente 'Roboto' de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+/* Estilos de las imágenes */
+img {
+    max-width: 100%;
+}
+
+/* Contenedor máximo de 1200px centrado en la página */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos del menú de navegación */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* Estilos del logo */
+.logo {
+    color: rgb(36, 113, 163);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+/* Estilos del menú de navegación */
+.menu .navbar ul {
+    display: flex;
+}
+
+.menu .navbar ul li a {
+    font-size: 19px;
+    padding: 0 20px;
+    color: rgb(0, 139, 139);
+    display: flex;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(36, 113, 163);
+}
+
+/* Estilos del icono de menú y del menú desplegable */
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos del contenido del encabezado */
+.header-content {
+    display: flex;
+    padding: 80px 0 0 0;
+}
+
+/* Estilos del texto del encabezado */
+.header-txt {
+    flex-basis: 50%;
+    padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-txt span {
+    font-size: 27px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-txt h1 {
+    font-size: 50px;
+    line-height: 1;
+    color: rgb(0, 139, 139);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos del botón en el encabezado */
+.btn-1 {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: rgb(36, 113, 163);
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(33, 40, 105, 0.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos de la imagen en el encabezado */
+.header-img {
+    flex-basis: 50%;
+}
+
+/* Estilos de la sección de proyectos */
+.brands {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 15px 20px rgba(33, 40, 105, 0.2);
+}
+
+/* Estilos de cada proyecto en la sección de proyectos */
+.brands-1 {
+    flex-basis: calc(25% - 25px);
+}
+
+.brands-1 p {
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 600;
+    color: rgb(0, 139, 139);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.brands-1 img {
+    width: 150px;
+}
+
+/* Estilos de la sección de servicios */
+.Services {
+    padding: 100px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 1;
+    color: rgb(0, 139, 139);
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos del contenido de servicios */
+.Services-content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos de cada servicio */
+.services-1 {
+    flex-basis: calc(20% - 30px);
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(33, 40, 105, 0.2);
+    border-radius: 25px;
+    color: rgb(0, 139, 139);
+    font-size: 15px;
+}
+
+.services-1:hover {
+    background-color: rgb(36, 113, 163);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.services-1 img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.services-1 h3 {
+    top: 10px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos de la sección de información */
+.Informacion {
+    padding: 50px 0 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos de la imagen en la sección de información */
+.Informacion-img {
+    flex-direction: 50%;
+}
+
+/* Estilos del texto en la sección de información */
+.informacion-txt {
+    flex-basis: 50%;
+    padding-left: 50px;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos de la sección 'Acerca de' */
+.about {
+    padding: 80px 0;
+    background-color: whitesmoke;
+}
+
+/* Estilos del contenido en la sección 'Acerca de' */
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos del texto en la sección 'Acerca de' */
+.about-txt {
+    flex-basis: 50%;
+    padding-right: 80px;
+}
+
+/* Estilos de la imagen en la sección 'Acerca de' */
+.about-img {
+    flex-basis: 50%;
+}
+
+/* Estilos de la sección de contacto */
+.contact {
+    padding: 120px 0;
+    text-align: center;
+}
+
+/* Estilos del formulario de contacto */
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+input {
+    width: 300px;
+    padding: 17px;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10 rgba(33, 40, 105, 0.2);
+    margin-right: 20px;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: black;
+    padding: 50px 0;
+}
+
+/* Estilos del contenido del pie de página */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos de los enlaces en el pie de página */
+.link h3 {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.link a {
+    color: white;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos de los enlaces en el pie de página al pasar el mouse */
+.link a:hover {
+    color: rgb(0, 139, 139);
+}
+
+/* Estilos para pantallas con ancho máximo de 991px */
+@media (max-width: 991px) {
+    /* Ajustes en el menú de navegación para dispositivos más pequeños */
+    .menu {
+        padding: 20px;
+        position: relative;
+    }
+
+    .menu label {
+        cursor: pointer;
+        display: initial; /* Mostrar el icono de hamburguesa */
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(245, 245, 245, 0.8);
+        display: none;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        padding: 20px 0;
+        align-items: center;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: white;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    /* Ajustes en el contenido del encabezado para dispositivos más pequeños */
+    .header-content {
+        padding: 20px 30px;
+        flex-direction: column;
+        text-align: center;
+        font-size: 10px; 
+    }
+
+    .header-txt {
+        padding: 0;
+        margin-bottom: 15px;
+        font-size: 10px; 
+    }
+
+    .header-txt span {
+        font-size: 21px;
+    }
+
+    .header-txt h1 {
+        font-size: 21px;
+    }
+
+    p {
+        margin-bottom: 30px;
+        font-size: 11px;
+    }
+
+    .btn-1 {
+        display: inline-block;
+        padding: 14px 25px;
+        background-color: rgb(36,113,163);
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-size: 10px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(33,40, 105, 0.2);
+    }
+
+    /* Ajustes en la sección de proyectos para dispositivos más pequeños */
+    .brands {
+        padding: 30px;
+        margin: 0 30px;
+        flex-direction: column;
+    }
+
+    .brands-1 {
+        text-align: center;
+    }
+
+    .brands-1 p {
+        margin-bottom: 15px;
+        font-size: 19px;
+    }
+
+    .brands-1 img {
+        margin-bottom: 10px;
+    }
+
+    /* Ajustes en la sección de servicios para dispositivos más pequeños */
+    .Services {
+        padding: 50px 30px 30px 30px;
+    }
+
+    .Services h2 {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .Services-content {
+        flex-direction: column;
+        text-align: center; 
+        color: darksalmon;     
+        text-decoration-color: darksalmon;  
+    }
+
+    .services-1 {
+        margin-bottom: 30px;
+    }
+
+    /* Ajustes en la sección de información para dispositivos más pequeños */
+    .Informacion {
+        padding: 0 30px 30px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .informacion-txt {
+        padding: 0 0 30px 0;
+    }
+
+    .Informacion h2 {
+        font-size: 21px;
+    } 
+
+    .Informacion-img {
+        order: 2;
+    }
+
+    /* Ajustes en la sección 'Acerca de' para dispositivos más pequeños */
+    .about {
+        padding: 30px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-txt {
+        padding: 0 0 30px 0;
+    }
+
+        .about-txt h2 {
+            font-size: 21px;
+        }
+
+        /* Ajustes en la sección de contacto para dispositivos más pequeños */
+        .contact {
+            padding: 50px 80px;
+        }
+
+        .contact h2 {
+            font-size: 21px;
+        }
+
+        form {
+            flex-direction: column;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        /* Ajustes en el pie de página para dispositivos más pequeños */
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+}

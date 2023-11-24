@@ -1,0 +1,216 @@
+/* Importa la fuente Roboto desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Estilos para el encabezado */
+.header {
+    background-color: #333; /* Color de fondo del encabezado */
+    padding: 20px 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 0px; /* Márgenes del encabezado */
+
+}
+
+/* Estilos para la barra de navegación */
+.nav {
+    text-align: right; /* Alinea los enlaces a la derecha */
+}
+
+.nav-list {
+    list-style: none; /* Elimina viñetas de la lista de enlaces */
+    padding: 0; /* Elimina el relleno de la lista */
+}
+
+/* Estilos para los elementos de la barra de navegación */
+.nav-item {
+    display: inline; /* Muestra los elementos en línea */
+    margin: 0 10px; /* Espacio entre los enlaces */
+}
+
+.nav-item a {
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    color: white; /* Color de texto de los enlaces */
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para el carrusel de imágenes */
+.slideshow-container {
+    max-width: 99.7%;
+    position: relative;
+    margin: auto; 
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
+
+}
+
+.slide {
+    display: none; /* Oculta las diapositivas */
+}
+
+/* Estilos para las imágenes dentro del carrusel */
+img {
+    width: 100%;
+    height: 800px;
+    margin-right: 0px; 
+} 
+
+/* Estilos para el contenedor de imágenes */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+.image-container img {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilos para las columnas de servicios */
+.column {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra tanto la imagen como el texto verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.column:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.column h4 {
+    margin: 10px 0; /* Espacio entre la imagen y el texto */
+    color: darksalmon;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: darksalmon;
+    text-decoration-style: solid;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.link h3 {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 11px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 8px;
+}
+
+.link a {
+    color: white;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 8px;
+}
+
+.link a:hover {
+    color: rgb(0,139,139); /* Cambia el color al pasar el mouse */
+}
+
+
+@media (max-width: 791px) {
+    .header {
+        padding: 10px; /* Ajusta el relleno del encabezado */
+        font-family: 'Roboto', sans-serif; 
+        position: relative;
+        top: 5px;
+    }
+
+    .nav {
+        text-align: center; /* Alinea los enlaces horizontalmente al centro */
+    }
+
+    .nav-list {
+        text-align: center; /* Alinea los elementos de la lista horizontalmente al centro */
+        font-size: 10px;
+    }
+
+    .nav-item {
+        display: block; /* Cambia los elementos de navegación a bloques para que se muestren uno debajo del otro */
+        margin: 5px; /* Espacio entre los elementos de navegación */
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .slideshow-container {
+        height: auto;/*   Ajusta la altura del carrusel para que se ajuste automáticamente al contenido */
+        margin-bottom: 14px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slide {
+        display: block; /* Muestra las diapositivas una debajo de la otra en dispositivos móviles */
+    }
+
+    .image-container {
+        align-items: center; /* Centra verticalmente en dispositivos móviles */
+        height: -50%;
+    }
+
+    .image-container img {
+        max-width: auto; /* Ajusta el ancho de la imagen al 100% para que quepa en la pantalla */
+        height: -100px;
+    }
+
+    .column {
+        flex: 1;
+        margin: 10px 0; /* Espacio entre las columnas en dispositivos móviles */
+        margin-top: -50px;
+    }
+
+    .column h4 {
+        margin: 10px 0; /* Espacio entre el texto y las imágenes en dispositivos móviles */
+        font-family: 'Roboto', sans-serif;
+        flex-direction: column;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .footer-content {
+        flex-direction:column; /* Cambia la dirección de los elementos del pie de página a columna en dispositivos móviles */
+        text-align: center; /* Alinea el texto del pie de página al centro en dispositivos móviles */
+        margin-left: -50px;
+    }
+    
+    .footer-content h3{
+        text-align: center;
+        margin-right: -40px;
+    }
+}
