@@ -37,12 +37,12 @@ function precargarImagenes(imagenes) {
 
 // Llama a la función de precarga con las rutas de las imágenes que deseas precargar
 precargarImagenes([
-    'imginf/imagen1.png',
-    'imginf/imagen2m.jpg',
-    'imginf/imagen3.png',
-    'imginf/imagen4m.jpg',
-    'imginf/imagen5.png',
-    'imginf/imagen6m.jpg'
+    'imginf/imagen1m.webp',
+    'imginf/imagen2m.webp',
+    'imginf/imagen3m.webp',
+    'imginf/imagen4m.webp',
+    'imginf/imagen5m.webp',
+    'imginf/imagen6m.webp'
 ]);
 
 // Inicia el proceso de mostrar diapositivas
