@@ -380,6 +380,11 @@ h2{
     margin-bottom: 20px;
     }
 
+    .contact h2{
+        margin-bottom: 50px;
+        
+    }
+
 /* Estilos específicos para el pie de página en dispositivos móviles */
     .footer-content {
     flex-direction: column;
