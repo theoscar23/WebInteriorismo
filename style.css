@@ -155,6 +155,8 @@ img {
     flex-direction: column;
     align-items: center; /* Centra tanto la imagen como el texto verticalmente */
     text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 15%;
+    margin-top: 1%;
 }
 
 .column:hover {
@@ -213,26 +215,45 @@ footer {
 
 
 @media (max-width: 791px) {
-    .header {
-        padding: 10px; /* Ajusta el relleno del encabezado */
-        font-family: 'Roboto', sans-serif; 
+    /* Ajustes en el menú de navegación para dispositivos más pequeños */
+    .menu {
+        padding: 20px;
         position: relative;
-        top: 5px;
     }
 
-    .nav {
-        text-align: center; /* Alinea los enlaces horizontalmente al centro */
+    .menu label {
+        cursor: pointer;
+        display: none; /* Mostrar el icono de hamburguesa */
+        width: 100px;/*Arreglarlo para que salga la hamburguesa*/
+        height: 5px;
+        
     }
 
-    .nav-list {
-        text-align: center; /* Alinea los elementos de la lista horizontalmente al centro */
-        font-size: 10px;
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(245, 245, 245, 0.8);
+        display: none;
+    }   
+
+    .menu .navbar ul {
+        flex-direction: column;
     }
 
-    .nav-item {
-        display: block; /* Cambia los elementos de navegación a bloques para que se muestren uno debajo del otro */
-        margin: 5px; /* Espacio entre los elementos de navegación */
-        font-family: 'Roboto', sans-serif;
+    .menu .navbar ul li {
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+    }
+    .menu .navbar ul li a:hover {
+        color: white;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
     }
 
     .slideshow-container {

@@ -323,7 +323,7 @@ input {
         cursor: pointer;
         display: initial; /* Mostrar el icono de hamburguesa */
     }
-
+    
     .menu .navbar {
         position: absolute;
         top: 100%;
