@@ -4,7 +4,7 @@
 /* Estilos del cuerpo de la página */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: white;
+    background-color: whitesmoke;
 }
 /* Estilos de las imágenes */
 img {
@@ -197,6 +197,7 @@ footer {
     color: white;
     font-size: 15px;
     margin-bottom: 11px;
+    margin-left: 10px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
