@@ -181,7 +181,8 @@ img {
 /* Estilos para el pie de página */
 footer {
     background-color: black;
-    padding: 50px 0;
+    padding: 50px;
+    margin: -13%;
 }
 
 .footer-content {
@@ -196,7 +197,6 @@ footer {
     margin-bottom: 11px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    margin-right: 8px;
 }
 
 .link a {
@@ -204,8 +204,7 @@ footer {
     font-size: 13px;
     display: block;
     margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 8px;
+    font-family: 'Roboto', sans-serif
 }
 
 .link a:hover {
