@@ -1,36 +1,105 @@
 /* Importa la fuente Roboto desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Estilos para el encabezado */
-.header {
-    background-color: #333; /* Color de fondo del encabezado */
-    padding: 20px 30px;
+/* Estilos del cuerpo de la página */
+body {
     font-family: 'Roboto', sans-serif;
-    margin-right: 0px; /* Márgenes del encabezado */
-
+    background-color: white;
+}
+/* Estilos de las imágenes */
+img {
+    max-width: 100%;
 }
 
-/* Estilos para la barra de navegación */
-.nav {
-    text-align: right; /* Alinea los enlaces a la derecha */
+/* Contenedor máximo de 1200px centrado en la página */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.nav-list {
-    list-style: none; /* Elimina viñetas de la lista de enlaces */
-    padding: 0; /* Elimina el relleno de la lista */
+/* Estilos del menú de navegación */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    text-decoration: none;
+    list-style: none;
 }
 
-/* Estilos para los elementos de la barra de navegación */
-.nav-item {
-    display: inline; /* Muestra los elementos en línea */
-    margin: 0 10px; /* Espacio entre los enlaces */
+/* Estilos del logo */
+.logo {
+    color: rgb(36, 113, 163);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
-.nav-item a {
-    text-decoration: none; /* Elimina subrayado de los enlaces */
-    color: white; /* Color de texto de los enlaces */
-    font-size: 14px;
+/* Estilos del menú de navegación */
+.menu .navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu .navbar ul li a {
+    font-size: 19px;
+    padding: 0 20px;
+    color: rgb(0, 139, 139);
+    display: flex;
+    font-weight: 600;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(36, 113, 163);
+    list-style: none;
+}
+
+/* Estilos del icono de menú y del menú desplegable */
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos del contenido del encabezado */
+.header-content {
+    display: flex;
+    padding: 80px 0 0 0;
+}
+
+/* Estilos del texto del encabezado */
+.header-txt {
+    flex-basis: 50%;
+    padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-txt span {
+    font-size: 27px;
+    text-transform: capitalize;
+    color: whitesmoke;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-txt h1 {
+    font-size: 50px;
+    line-height: 1;
+    color: rgb(0, 139, 139);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
 }
 
 /* Estilos para el carrusel de imágenes */
@@ -62,7 +131,7 @@ img {
     height: 100vh;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .image-container img {
