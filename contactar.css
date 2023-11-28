@@ -146,13 +146,13 @@ input{
 
     .menu .navbar ul {
         flex-direction: column;
-        margin-right: 750px;
+  
     }
 
     .menu .navbar ul li {
         width: 100%;
         padding: 20px;
-        margin-right: 25px;
+        margin-left: -50%;
     }
 
     .menu .navbar ul li a:hover {
