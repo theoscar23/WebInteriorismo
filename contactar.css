@@ -36,6 +36,7 @@ body{
     font-weight: 800;
     margin-right: 250px;
     display: flex;
+    text-decoration: none;
 }
 
 /* Estilos del menú de navegación */
@@ -53,7 +54,7 @@ body{
     display: flex;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
-    
+    text-decoration: none;
 }
 
 .menu .navbar ul li a:hover {
@@ -150,9 +151,9 @@ input{
 
     .menu .navbar ul li {
         width: 100%;
-        padding: 20px 0;
+        padding: 20px;
+        margin-right: 25px;
     }
-
 
     .menu .navbar ul li a:hover {
         color: white;
