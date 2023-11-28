@@ -20,6 +20,60 @@ body{
     background-color: whitesmoke;
 }
 
+/* Estilos del menú de navegación */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* Estilos del logo */
+.logo {
+    color: rgb(36, 113, 163);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-right: 250px;
+    display: flex;
+}
+
+/* Estilos del menú de navegación */
+.menu .navbar ul {
+    display: flex;
+    list-style: none;
+    margin-left: 500px;
+    display: flex;
+}
+
+.menu .navbar ul li a {
+    font-size: 19px;
+    padding: 0 20px;
+    color: rgb(0, 139, 139);
+    display: flex;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(36, 113, 163);
+}
+
+/* Estilos del icono de menú y del menú desplegable */
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -28,6 +82,8 @@ form{
     background-color: whitesmoke;
     padding: 45px;
     box-shadow: 0 0 20px rgba(0, 0, 0,0.2);
+    margin-left: 500px;
+    margin-top: 135px;
 }
 
 
@@ -65,8 +121,46 @@ input{
     body{
         padding: 30px;
     }
+     /* Ajustes en el menú de navegación para dispositivos más pequeños */
+     .menu {
+        padding: 20px;
+        position: relative;
+    }
+
+
+    .menu label {
+        cursor: pointer;
+        display: initial; /* Mostrar el icono de hamburguesa */
+    }
+    
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(245, 245, 245, 0.8);
+        display: none;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        padding: 20px 0;
+        align-items: center;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: white;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
     form{
         width: 340px;
     }
-    
+
 }
