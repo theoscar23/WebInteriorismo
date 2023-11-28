@@ -82,7 +82,7 @@ form{
     background-color: whitesmoke;
     padding: 45px;
     box-shadow: 0 0 20px rgba(0, 0, 0,0.2);
-    margin-left: 500px;
+    margin-left: 400px;
     margin-top: 135px;
 }
 
@@ -131,6 +131,7 @@ input{
     .menu label {
         cursor: pointer;
         display: initial; /* Mostrar el icono de hamburguesa */
+        
     }
     
     .menu .navbar {
@@ -144,13 +145,14 @@ input{
 
     .menu .navbar ul {
         flex-direction: column;
+        margin-right: 750px;
     }
 
     .menu .navbar ul li {
         width: 100%;
         padding: 20px 0;
-        align-items: center;
     }
+
 
     .menu .navbar ul li a:hover {
         color: white;
