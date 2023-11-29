@@ -224,12 +224,19 @@ footer {
 
     .menu label {
         cursor: pointer;
-        display: none; /* Mostrar el icono de hamburguesa */
+        display: block; /* Mostrar el icono de hamburguesa */
         width: 100px;/*Arreglarlo para que salga la hamburguesa*/
-        height: 5px;
-        
+        height: 10px;
+        margin:auto;
+        color: black;
+        font-size: 30px;
+        padding-left: 300px;
+        padding-bottom: 20px;
     }
 
+    #menu:checked + label + .navbar {
+        display: initial;
+    }
 
     .menu .navbar {
         position: absolute;
@@ -254,9 +261,9 @@ footer {
     }
 
     #menu:checked ~ .navbar {
-        display: initial;
+        display: block;
     }
-
+   
     .slideshow-container {
         height: auto;/*   Ajusta la altura del carrusel para que se ajuste automáticamente al contenido */
         margin-bottom: 14px;
@@ -275,14 +282,14 @@ footer {
     }
 
     .image-container img {
-        max-width: auto; /* Ajusta el ancho de la imagen al 100% para que quepa en la pantalla */
-        height: -100px;
+        max-width: 100%; /* Ajusta el ancho de la imagen al 100% para que quepa en la pantalla */
+        height: auto;
     }
 
     .column {
         flex: 1;
         margin: 10px 0; /* Espacio entre las columnas en dispositivos móviles */
-        margin-top: -50px;
+        margin-top: 0px;
     }
 
     .column h4 {
