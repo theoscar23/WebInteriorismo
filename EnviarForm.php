@@ -8,13 +8,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 
     // Configuración del correo
-    $para = "oscarambrosio23@gmail.com.com";
-    $asunto = "Nuevo mensaje de contacto";
+    $para = "oscarambrosio23@gmail.com";
+    $asunto = "Nuevo contacto";
 
     // Contenido del correo
     $contenido = "Nombre: $nombre\n";
     $contenido = "Apellido: $apellido\n";
-    $direccion = "Direccion: $direccion\n";
+    $contenido = "Direccion: $direccion\n";
     $contenido .= "Correo electrónico: $email\n\n";
     
 
