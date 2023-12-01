@@ -24,7 +24,6 @@ img {
     justify-content: space-between;
     padding: 20px 0;
     text-decoration: none;
-    list-style: none;
 }
 
 /* Estilos del logo */
@@ -33,6 +32,7 @@ img {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 800;
+    list-style: none;
 }
 
 /* Estilos del menú de navegación */
@@ -224,19 +224,16 @@ footer {
 
     .menu label {
         cursor: pointer;
-        display: block; /* Mostrar el icono de hamburguesa */
-        width: 100px;/*Arreglarlo para que salga la hamburguesa*/
-        height: 10px;
-        margin:auto;
-        color: black;
-        font-size: 30px;
-        padding-left: 250px;
-        padding-bottom: 20px;
+        display: initial; /* Mostrar el icono de hamburguesa */
+        width: 20px;
+        height: 25px;
+        position: relative;
+        top: 10px;
     }
 
-    #menu:checked + label + .navbar {
+    /* #menu:checked + label + .navbar {
         display: initial;
-    }
+    } */
 
     .menu .navbar {
         position: absolute;
@@ -261,7 +258,7 @@ footer {
     }
 
     #menu:checked ~ .navbar {
-        display: block;
+        display: initial;
     }
    
     .slideshow-container {

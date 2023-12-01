@@ -94,6 +94,13 @@ form h2{
     color: rgb(0,139,139);
 }
 
+form label{
+    font-size: 20px;
+    align-items: flex-start;
+    color: rgba(36,113,163,0.8);
+    padding-right: 200px;
+}
+
 input{
     background-color: whitesmoke;
     padding: 17px 20px;
