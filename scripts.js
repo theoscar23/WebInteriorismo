@@ -48,16 +48,3 @@ precargarImagenes([
 // Inicia el proceso de mostrar diapositivas
 showSlides();
 
-
-function enviarCorreo() {
-    // Obtener los valores del formulario
-    var nombre = document.getElementById("nombre").value;
-    var correo = document.getElementById("correo").value;
-    var mensaje = document.getElementById("mensaje").value;
-    
-    // Crear el cuerpo del correo
-    var cuerpoCorreo = "Nombre: " + nombre + "\nCorreo electrónico: " + correo + "\nMensaje: " + mensaje;
-
-    // Abrir el cliente de correo predeterminado del usuario
-    window.location.href = "oscarambrosio23@gmail.com?subject=Asunto del correo&body=" + cuerpoCorreo;
-}
