@@ -16,7 +16,7 @@
                 <a href="index.html" class="logo">Logo</a>
                 <input type="checkbox" id="menu">
                 <label for="menu">
-                <!-- ☰ --> <img src="imginf/hamburguesaicon.webp" class="menu-icono" alt="">
+                 ☰ <!-- <img src="imginf/hamburguesaicon.webp" class="menu-icono" alt="">-->
                 </label>
                 <!-- Menú de navegación -->
                 <nav class="navbar">
@@ -95,4 +95,23 @@
         </div>
     </footer>
     <script src="scripts.js"></script><!-- Enlace al archivo de scripts JavaScript -->
+    <script>
+        $(document).ready(function() {
+          $('#menu').change(function() {
+            if ($(this).is(":checked")) {
+              $('.navbar').slideDown();
+            } else {
+              $('.navbar').slideUp();
+            }
+          });
+      
+          // Cerrar el menú al hacer clic en un enlace
+          $('.navbar a').on('click', function() {
+            $('#menu').prop('checked', false);
+            $('.navbar').slideUp();
+          });
+        });
+      </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </body>

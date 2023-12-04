@@ -225,10 +225,8 @@ footer {
     .menu label {
         cursor: pointer;
         display: initial; /* Mostrar el icono de hamburguesa */
-        width: 20px;
-        height: 25px;
-        position: relative;
-        top: 10px;
+        font-size: 25px;
+        width: 10px;
     }
 
     /* #menu:checked + label + .navbar {
@@ -236,7 +234,7 @@ footer {
     } */
 
     .menu .navbar {
-        position: absolute;
+        position: none;
         top: 100%;
         left: 0;
         right: 0;
@@ -258,7 +256,7 @@ footer {
     }
 
     #menu:checked ~ .navbar {
-        display: initial;
+        display: block;
     }
    
     .slideshow-container {
