@@ -343,6 +343,39 @@ input {
     #menu:checked ~ .navbar {
         display: initial;
     }
+    /* Estilos del submenu en dispositivos móviles */
+    .menu .navbar ul .submenu {
+    display: none;
+    position: static; /* Cambiado a posición estática para seguir el flujo del documento */
+    background-color: rgba(245, 245, 245, 0.8);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu .navbar ul .submenu li {
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.5);
+    color: rgb(0, 139, 139);
+    }
+
+/* Mostrar el submenu en dispositivos móviles al hacer clic */
+    .menu .navbar ul li .submenu-toggle {
+    cursor: pointer;
+    display: initial;
+    margin-left: auto; /* Mueve el icono hacia la derecha */
+    }
+
+    .menu .navbar ul li .submenu-toggle img {
+    width: 15px; /* Ajusta el tamaño del icono según sea necesario */
+    }
+
+/* Ajustes de diseño para el submenu en dispositivos móviles */
+    .menu .navbar ul li:hover .submenu,
+    .menu .navbar ul li.active .submenu {
+    display: flex;
+    flex-direction: column;
+    }
+
 
     /* Estilos específicos para el contenido del encabezado en dispositivos móviles */
     .header-content {
