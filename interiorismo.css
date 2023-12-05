@@ -15,7 +15,7 @@
 /* Estilos del cuerpo de la página */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 /* Estilos generales para imágenes */
@@ -59,6 +59,26 @@ img {
     font-family: 'Roboto', sans-serif;
 }
 
+.menu .navbar ul .submenu {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu .navbar ul .submenu li {
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.5);
+    color: rgb(0, 139, 139);
+}
+
+/* Mostrar el submenu al pasar el ratón sobre el elemento padre */
+.menu .navbar ul li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+}
+
 .menu .navbar ul li a:hover {
     color: rgb(36, 113, 163);
 }
@@ -88,6 +108,7 @@ img {
     flex-basis: 50%;
     padding-right: 30px;
     font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
 }
 
 /* Estilos de la imagen del encabezado */
@@ -152,7 +173,7 @@ h2 {
 /* Estilos de la sección "Acerca de" */
 .about {
     padding: 80px 0;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 /* Estilos del contenido de la sección "Acerca de" */

@@ -14,26 +14,34 @@
 <body>
     <!-- Encabezado de la página -->
     <header class="header">
-        <!-- Contenedor principal -->
         <div class="container">
-            <!-- Barra de menú -->
+            <!-- Barra de navegación -->
             <div class="menu">
                 <a href="index.html" class="logo">Logo</a>
-                <!-- Icono de hamburguesa para dispositivos móviles -->
                 <input type="checkbox" id="menu">
                 <label for="menu">
                     <img src="imginf/hamburguesaicon.webp" class="menu-icono" alt="">
                 </label>
-                <!-- Barra de navegación -->
+                <!-- Menú de navegación -->
                 <nav class="navbar">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="decoracion.html">Decoración</a></li>
                         <li><a href="informacion.html">Quienes Somos</a></li>
+                        <!-- Desplegable "Servicios" -->
+                        <li class="dropdown">
+                            <a href="#servicios">Servicios</a>
+                            <ul class="submenu">
+                                <li><a href="interiorismo.html">Interiorismo</a></li>
+                                <li><a href="decoracion.html">Decoración</a></li>
+                            </ul>
+                        </li>
+                        <!-- Fin del desplegable "Servicios" -->
                         <li><a href="Contactar.html">Contactar</a></li>
                     </ul>
                 </nav>
             </div>
+        </div>
+    </header>
             <!-- Contenido del encabezado -->
             <div class="header-content">
                 <!-- Texto del encabezado -->

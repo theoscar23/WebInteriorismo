@@ -16,6 +16,7 @@ body {
     background-color: whitesmoke;
 }
 
+
 /* Estilos de las imágenes */
 img {
     max-width: 100%;
@@ -56,6 +57,25 @@ img {
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
 }
+.menu .navbar ul .submenu {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu .navbar ul .submenu li {
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.5);
+    color: rgb(0, 139, 139);
+}
+
+/* Mostrar el submenu al pasar el ratón sobre el elemento padre */
+.menu .navbar ul li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+}
 
 .menu .navbar ul li a:hover {
     color: rgb(36, 113, 163);
@@ -86,6 +106,7 @@ img {
     flex-basis: 50%;
     padding-right: 30px;
     font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
 }
 
 .header-txt span {
@@ -94,6 +115,7 @@ img {
     color: black;
     font-weight: 600;
     margin-bottom: 15px;
+    margin-left: 200px;
     display: block;
     font-family: 'Roboto', sans-serif;
 }
@@ -111,6 +133,10 @@ p {
     color: black;
     margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
+}
+
+.header-content img{
+margin-bottom: 40px;
 }
 
 /* Estilos del botón en el encabezado */
@@ -422,8 +448,6 @@ input {
     .Services-content {
         flex-direction: column;
         text-align: center; 
-        color: darksalmon;     
-        text-decoration-color: darksalmon;  
     }
 
     .services-1 {
