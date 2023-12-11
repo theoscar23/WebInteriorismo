@@ -136,7 +136,8 @@ p {
 }
 
 .header-content img{
-margin-bottom: 40px;
+    margin-bottom: 40px;
+    margin-right: 70px;
 }
 
 /* Estilos del botón en el encabezado */
@@ -203,15 +204,18 @@ h2 {
 
 /* Estilos del contenido de servicios */
 .Services-content {
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
     display: flex;
     justify-content: space-between;
     font-family: 'Roboto', sans-serif;
+
 }
 
 /* Estilos de cada servicio */
 .services-1 {
-    flex-basis: calc(20% - 30px);
+    flex-basis: calc(45% - 30px);
     background-color: whitesmoke;
     box-shadow: 0 0 10px rgba(33, 40, 105, 0.2);
     border-radius: 25px;
@@ -236,6 +240,7 @@ h2 {
     font-size: 20px;
     line-height: 1.2;
     font-family: 'Roboto', sans-serif;
+    color: darksalmon;
 }
 
 /* Estilos de la sección de información */
@@ -376,40 +381,39 @@ input {
     #menu:checked ~ .navbar {
         display: initial;
     }
-        /* Estilos del submenu en dispositivos móviles */
-        .menu .navbar ul .submenu {
-            display: none;
-            position: static; /* Cambiado a posición estática para seguir el flujo del documento */
-            background-color: rgba(245, 245, 245, 0.8);
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            }
+    /* Estilos del submenu en dispositivos móviles */
+    .menu .navbar ul .submenu {
+        display: none;
+        position: static; /* Cambiado a posición estática para seguir el flujo del documento */
+        background-color: rgba(245, 245, 245, 0.8);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
         
-            .menu .navbar ul .submenu li {
-            padding: 12px;
-            text-align: center;
-            background-color: rgba(245, 245, 245, 0.5);
-            color: rgb(0, 139, 139);
-            }
-        
-        /* Mostrar el submenu en dispositivos móviles al hacer clic */
-            .menu .navbar ul li .submenu-toggle {
-            cursor: pointer;
-            display: initial;
-            margin-left: auto; /* Mueve el icono hacia la derecha */
-            }
-        
-            .menu .navbar ul li .submenu-toggle img {
-            width: 15px; /* Ajusta el tamaño del icono según sea necesario */
-            }
-        
-        /* Ajustes de diseño para el submenu en dispositivos móviles */
-            .menu .navbar ul li:hover .submenu,
-            .menu .navbar ul li.active .submenu {
-            display: flex;
-            flex-direction: column;
-            }
-        
+    .menu .navbar ul .submenu li {
+        padding: 12px;
+        text-align: center;
+        background-color: rgba(245, 245, 245, 0.5);
+        color: rgb(0, 139, 139);
+         }
 
+/* Mostrar el submenu en dispositivos móviles al hacer clic */
+        .menu .navbar ul li .submenu-toggle {
+        cursor: pointer;
+        display: initial;
+        margin-left: auto; /* Mueve el icono hacia la derecha */
+        }
+        
+        .menu .navbar ul li .submenu-toggle img {
+        width: 15px; /* Ajusta el tamaño del icono según sea necesario */
+        }
+        
+ /* Ajustes de diseño para el submenu en dispositivos móviles */
+        .menu .navbar ul li:hover .submenu,
+        .menu .navbar ul li.active .submenu {
+         display: flex;
+         flex-direction: column;
+        }
+        
     /* Ajustes en el contenido del encabezado para dispositivos más pequeños */
     .header-content {
         padding: 20px 30px;
@@ -426,6 +430,7 @@ input {
 
     .header-txt span {
         font-size: 21px;
+        margin-left: 0px;
     }
 
     .header-txt h1 {
@@ -470,7 +475,7 @@ input {
 
     /* Ajustes en la sección de servicios para dispositivos más pequeños */
     .Services {
-        padding: 50px 30px 30px 30px;
+        padding: 50px 0px 30px 0px;
     }
 
     .Services h2 {
@@ -484,7 +489,9 @@ input {
     }
 
     .services-1 {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+        margin-left: -160%;
+        margin-right: -160%;
     }
 
     /* Ajustes en la sección de información para dispositivos más pequeños */
