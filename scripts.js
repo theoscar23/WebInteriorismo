@@ -45,6 +45,9 @@ precargarImagenes([
     'imginf/imagen6m.webp'
 ]);
 
+
+
+
 // Inicia el proceso de mostrar diapositivas
 showSlides();
 

@@ -156,22 +156,16 @@ input{
     .menu label {
         cursor: pointer;
         display: initial; /* Mostrar el icono de hamburguesa */
-        position: absolute;
-        top: 20px;
-        right: 200px; /* Ajusta según sea necesario */
-    }
-
-    .menu-icono { /* Agrega esta regla para el icono de hamburguesa */
-        width: 25px;
     }
 
     .menu .navbar {
-        position: absolute;
-        top: 100%;
+        position: relative;
+        top:100%;
         left: 0;
         right: 0;
         background-color: rgba(245, 245, 245, 0.8);
         display: none;
+        flex-direction: column;
     }
 
     .menu .navbar ul {
@@ -193,8 +187,9 @@ input{
         color: white;
     }
 
-    #menu:checked ~ .navbar {
-        display: initial;
+    .menu:checked ~ .navbar {
+        display:flex;
+        top: 50%;
     }
 
     .form-container {
