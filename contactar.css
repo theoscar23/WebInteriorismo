@@ -156,28 +156,31 @@ input{
 
     .menu label {
         cursor: pointer;
-        display: initial; /* Mostrar el icono de hamburguesa */
+        display: none; /* Mostrar el icono de hamburguesa */
+        height: 65px;
+        width: 65px;
+        margin-bottom: 1000px; 
     }
 
     .menu .navbar {
-        position: relative;
+        position: absolute;
         top:100%;
         left: 0;
         right: 0;
         background-color: rgba(245, 245, 245, 0.8);
         display: none;
-        flex-direction: column;
+        
     }
 
     .menu .navbar ul {
         flex-direction: column;
-        margin-right: 0;
     }
 
     .menu .navbar ul li {
         width: 100%;
-        padding: 20px;
-        margin-right: 0;
+        padding: 20px 0;
+        align-items: center;
+        transform: translateY(50%);
     }
 
     .menu .navbar ul li a {
