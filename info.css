@@ -155,6 +155,7 @@ p {
 /* Estilos de la imagen en el encabezado */
 .header-img {
     flex-basis: 50%;
+    margin-right: 30px;
 }
 
 /* Estilos de la sección de proyectos */
@@ -436,10 +437,15 @@ input {
         font-size: 21px;
     }
 
+    .header-img{
+        margin-left: 70px;
+    }
+
     p {
         margin-bottom: 30px;
         font-size: 11px;
     }
+
 
     .btn-1 {
         display: inline-block;
