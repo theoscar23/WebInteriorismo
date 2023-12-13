@@ -114,6 +114,7 @@ img {
 /* Estilos de la imagen del encabezado */
 .header-img {
     flex-basis: 50%;
+    margin-right: 60px;
 }
 
 /* Estilos específicos para el texto del encabezado */
@@ -389,6 +390,9 @@ input {
         padding: 0;
         margin-bottom: 15px;
         font-size: 14px;
+    }
+    .header-img{
+        margin-left: 80px;
     }
 
     .header-txt span {

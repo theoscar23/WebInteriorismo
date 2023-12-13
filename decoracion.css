@@ -201,6 +201,7 @@ h2{
     flex-basis: 50%;
     height: 60%;
     max-width: 50%;
+    margin-left: 50px;
 }
 
 /* Estilos para la sección "Servicios" */
@@ -405,6 +406,10 @@ h2{
         text-align: center;
     }
     
+    .about-img{
+        margin-left: 10px;
+    }
+
     .about-txt {
         padding: 0 0 30px 0;
     }
@@ -426,7 +431,7 @@ h2{
     }
     .btn-1{
         margin-right: -50%;
-        margin-left: 125px;
+        margin-left: 150px;
     }
 
     input {
