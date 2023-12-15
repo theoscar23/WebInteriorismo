@@ -104,7 +104,7 @@ img {
 
 /* Estilos para el carrusel de imágenes */
 .slideshow-container {
-    max-width: 99.7%;
+    max-width: 99.0%;
     position: relative;
     margin: auto; 
     margin-top: 0.5px;
