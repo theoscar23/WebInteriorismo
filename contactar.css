@@ -130,7 +130,6 @@ input{
     font-size: 16px;
 }
 
-
 .btn-1{
     background-color: rgb(36,113,163);
     color: white;
@@ -142,7 +141,6 @@ input{
 .btn-1:hover{
     background-color: #42a8f6;
 }
-
 
 @media (max-width: 991px) {
     body {
