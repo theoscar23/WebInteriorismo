@@ -1,4 +1,3 @@
-console.log('Script ejecutado');
 function validarFormulario() {
     var nombre = document.getElementById('nombre').value.trim();
     var apellido = document.getElementById('apellido').value.trim();
